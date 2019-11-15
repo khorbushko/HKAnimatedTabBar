@@ -198,6 +198,6 @@ Build and run :)
 
 ## Contact
 
-Have a question or an issue about `CalendarView`? Create an [issue](https://github.com/kirillgorbushko/HKAnimatedTabBar/issues/new)!
+Have a question or an issue about `AnimatedTabBar`? Create an [issue](https://github.com/kirillgorbushko/HKAnimatedTabBar/issues/new)!
 
 If you would like to contribute - just create a pull request.
