@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarReplaceView" customModule="testCustomTabBar" customModuleProvider="target">
+            <connections>
+                <outlet property="contentContainerView" destination="l2B-NG-SZS" id="VYN-xb-v6y"/>
+                <outlet property="holderView" destination="9oe-0u-c4h" id="1MT-7J-YHm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Z7A-ex-TSR" userLabel="Root View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2B-NG-SZS" userLabel="ContentContaimner View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oe-0u-c4h">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9oe-0u-c4h" secondAttribute="bottom" id="AlI-F7-8fg"/>
+                        <constraint firstItem="9oe-0u-c4h" firstAttribute="top" secondItem="l2B-NG-SZS" secondAttribute="top" id="W2d-L6-9gL"/>
+                        <constraint firstAttribute="trailing" secondItem="9oe-0u-c4h" secondAttribute="trailing" id="Xsg-9A-5KB"/>
+                        <constraint firstItem="9oe-0u-c4h" firstAttribute="leading" secondItem="l2B-NG-SZS" secondAttribute="leading" id="aUE-PE-IDW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="l2B-NG-SZS" firstAttribute="top" secondItem="Z7A-ex-TSR" secondAttribute="top" id="7rO-p7-Js9"/>
+                <constraint firstAttribute="bottom" secondItem="l2B-NG-SZS" secondAttribute="bottom" id="MAh-L0-mth"/>
+                <constraint firstItem="l2B-NG-SZS" firstAttribute="leading" secondItem="Z7A-ex-TSR" secondAttribute="leading" id="MuT-g2-eFT"/>
+                <constraint firstAttribute="trailing" secondItem="l2B-NG-SZS" secondAttribute="trailing" id="Pws-AA-gFu"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="356.52173913043481" y="-194.19642857142856"/>
+        </view>
+    </objects>
+</document>
