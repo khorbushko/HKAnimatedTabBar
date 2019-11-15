@@ -33,7 +33,7 @@ public class BaseView: UIView {
 
   private func prepareView() {
     let nameForXib = xibName()
-    let nibs = Bundle.main.loadNibNamed(nameForXib, owner: self, options: nil)
+    let nibs = Bundle(for: AnimatedTabBarController.self).loadNibNamed(nameForXib, owner: self, options: nil)
     if let view = nibs?.first as? UIView {
       view.backgroundColor = UIColor.clear
       view.translatesAutoresizingMaskIntoConstraints = false
