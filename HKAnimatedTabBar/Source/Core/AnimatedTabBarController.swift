@@ -120,11 +120,11 @@ open class AnimatedTabBarController: UITabBarController {
     /* dummy */
   }
 
-  public func selectController(_ position: Int) {
+  open func selectController(_ position: Int) {
     tabBar.selectElementAt(position)
   }
 
-  public func onItemSelection(_ index: Int) {
+  open func onItemSelection(_ index: Int) {
     DispatchQueue.main.async { [weak self] in
       self?.updatePrevSelectedControllerIndex(self?.selectedIndex)
 
