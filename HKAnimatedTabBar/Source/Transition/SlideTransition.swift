@@ -8,13 +8,22 @@
 
 import UIKit
 
+/**
+ Default animation for switching between controllers
+
+ - Tag: 1004
+ - Version: 0.1
+ */
 final public class SlideTransition: NSObject, UIViewControllerAnimatedTransitioning {
 
   private var viewControllers: [UIViewController]?
+
+  /// animation duration
   public static let transitionDuration: Double = 0.25
 
   // MARK: - LifeCycle
 
+  /// initialization
   public init(viewControllers: [UIViewController]?) {
     self.viewControllers = viewControllers
   }

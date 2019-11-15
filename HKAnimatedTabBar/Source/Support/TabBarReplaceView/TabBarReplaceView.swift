@@ -8,6 +8,12 @@
 
 import UIKit
 
+/**
+ Represent view that provide background content for tabBar
+
+ - Tag: 1009
+ - Version: 0.1
+ */
 final public class TabBarReplaceView: BaseView {
 
   private enum Defaults {
@@ -27,17 +33,29 @@ final public class TabBarReplaceView: BaseView {
     }
   }
 
+  /// corner radius
   public var contentContainerCornerRadius: CGFloat = Defaults.ContainerView.cornerRadius
+
+  /// shadow color
   public var contentContainerShadowColor: UIColor = Defaults.ContainerView.shadowColor
+
+  /// shadow offset
   public var contentContainerShadowOffset: CGSize = Defaults.ContainerView.shadowOffset
+
+  /// shadow opacity
   public var contentContainerShadowOpacity: Float = Defaults.ContainerView.shadowOpacity
+
+  /// shadow radius
   public var contentContainerShadowRadius: CGFloat = Defaults.ContainerView.shadowRadius
 
   private var gradientLayer: CAGradientLayer?
 
+  /// gradient start point
   public var startPointForGradient: CGPoint = CGPoint(x: 0, y: 1)
+  /// gradient end point
   public var endPointForGradient: CGPoint = CGPoint(x: 1, y: 0.3)
 
+  /// gradient colors
   public var gradientColors: [UIColor] = [] {
     didSet {
       gradientLayer?.removeFromSuperlayer()

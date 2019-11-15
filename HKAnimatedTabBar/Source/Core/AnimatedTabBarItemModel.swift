@@ -8,7 +8,7 @@
 
 import UIKit
 
-/*
+/**
  Represent model for tabBar item
 
  - Tag: 1000

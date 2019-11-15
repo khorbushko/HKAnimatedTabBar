@@ -8,7 +8,7 @@
 
 import UIKit
 
-/*
+/**
  View that represent object for tabBar button
 
  - Tag: 1001

@@ -8,18 +8,31 @@
 
 import UIKit
 
+/**
+ Class that replace standart UITabBarController and provide possibility to use custom animated buttons
+
+ - Author: Kyryl Horbushko, [contact](mailto:kirill.ge@gmail.com)
+ - Version: 0.1
+ - Tag: 1003
+ */
 open class AnimatedTabBarController: UITabBarController {
 
+  /// The tab bar view associated with this controller.
+  ///
+  /// Represented by `AnimatedTabBarView`
   override open var tabBar: AnimatedTabBarView {
     get {
       return super.tabBar as! AnimatedTabBarView
     }
   }
 
+  /// transition that will be used while switching from one controller to another
   open var transition: UIViewControllerAnimatedTransitioning {
     SlideTransition(viewControllers: self.viewControllers)
   }
 
+  /// this callback will be called if you will try to access
+  /// controller at index that not exist
   public var onOutOfBoundsItemAccessRequest: ((Int) -> ())?
 
   private (set) var previouslySelectedIndex: Int?
@@ -81,10 +94,12 @@ open class AnimatedTabBarController: UITabBarController {
     /* dummy */
   }
 
+  /// deselect all items
   public func deselectAllItems() {
     tabBar.deselectAllItems()
   }
 
+  /// allow to select previously selected controller
   public func selectPrevController() {
     if let previouslySelectedIndex = previouslySelectedIndex {
       selectController(previouslySelectedIndex)

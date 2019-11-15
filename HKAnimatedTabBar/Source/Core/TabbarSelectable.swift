@@ -8,13 +8,27 @@
 
 import UIKit
 
-// Should apply to root view controllers
+/**
+ Allow detect Same tab selection
+
+ If controller conform this protocol AnimatedTabBar will return appropriate callback
+
+ - Tag: 1005
+ - Version: 0.1
+ */
 public protocol TabbarSameTabSelectable where Self: UIViewController {
 
   func tabbarDidPressedTheSameTab()
 }
 
-// Should apply to visible view controllers
+/**
+ Allow detect tabBar switch action
+
+ If controller conform this protocol AnimatedTabBar will return appropriate callback
+
+ - Tag: 1007
+ - Version: 0.1
+ */
 public protocol TabbarTabSwitchable where Self: UIViewController {
 
   func tabbarDidSwitchTab()

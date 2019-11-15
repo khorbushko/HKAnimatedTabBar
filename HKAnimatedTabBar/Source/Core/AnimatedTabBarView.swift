@@ -8,14 +8,22 @@
 
 import UIKit
 
+/**
+ Represent view that will hold all tabBar items
+
+ - Tag: 1006
+ - Version: 0.1
+ */
 open class AnimatedTabBarView: UITabBar {
 
+  /// calback that will be called when item selected
   public var onItemSwitch: ((Int) -> ())? {
     didSet {
       replaceView.onItemSwitch = onItemSwitch
     }
   }
 
+  /// calback that will be called when same item selected
   public var onSameItemSelection: (() -> ())? {
     didSet {
       replaceView.onSameItemSelection = onSameItemSelection
@@ -27,6 +35,7 @@ open class AnimatedTabBarView: UITabBar {
     static let standartHeight: CGFloat = 49
   }
 
+  /// expected height of tabBar
   open var defaultHeight: CGFloat {
     return 75
   }
@@ -52,10 +61,12 @@ open class AnimatedTabBarView: UITabBar {
 
   // MARK: - Public
 
+  /// deselect all items
   open func deselectAllItems() {
     replaceView.selectElementAt(Int.max)
   }
 
+  /// select concrete element
   open func selectElementAt(_ position: Int) {
     replaceView.selectElementAt(position)
   }
