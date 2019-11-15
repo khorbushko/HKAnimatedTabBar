@@ -40,7 +40,7 @@ open class AnimatedTabBarView: UITabBar {
     return 75
   }
 
-  private (set) var replaceView: TabBarReplaceView! //swiftlint:disable:this implicitly_unwrapped_optional
+  public private (set) var replaceView: TabBarReplaceView! //swiftlint:disable:this implicitly_unwrapped_optional
 
   public var calculatedAdditionalBottomSafeAreaOffset: CGFloat {
     get {

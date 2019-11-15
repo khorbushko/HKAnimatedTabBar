@@ -35,7 +35,7 @@ open class AnimatedTabBarController: UITabBarController {
   /// controller at index that not exist
   public var onOutOfBoundsItemAccessRequest: ((Int) -> ())?
 
-  private (set) var previouslySelectedIndex: Int?
+  public private (set) var previouslySelectedIndex: Int?
 
   // MARK: - LifeCycle
 
@@ -86,7 +86,7 @@ open class AnimatedTabBarController: UITabBarController {
 
   // MARK: - Configuration
 
-  internal func configure() {
+  open func configure() {
     /* dummy */
   }
 
@@ -106,27 +106,25 @@ open class AnimatedTabBarController: UITabBarController {
     }
   }
 
-  // MARK: - Internal
-
-  internal func updatePrevSelectedControllerIndex(_ index: Int?) {
+  public func updatePrevSelectedControllerIndex(_ index: Int?) {
     self.previouslySelectedIndex = index
   }
 
-  internal func configureFor(_ items: [AnimatedTabBarItemModel]) {
+  public func configureFor(_ items: [AnimatedTabBarItemModel]) {
     tabBar.configureFor(items)
 
     view.layoutSubviews()
   }
 
-  internal func willTransitFrom(_ viewController: UIViewController, toViewController: UIViewController) {
+  open func willTransitFrom(_ viewController: UIViewController, toViewController: UIViewController) {
     /* dummy */
   }
 
-  internal func selectController(_ position: Int) {
+  public func selectController(_ position: Int) {
     tabBar.selectElementAt(position)
   }
 
-  internal func onItemSelection(_ index: Int) {
+  public func onItemSelection(_ index: Int) {
     DispatchQueue.main.async { [weak self] in
       self?.updatePrevSelectedControllerIndex(self?.selectedIndex)
 
