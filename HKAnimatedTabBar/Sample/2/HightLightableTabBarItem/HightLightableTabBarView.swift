@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class HightLightableTabBarView: BaseView, AnimatedTabBarItemRepresentable {
+final class HightLightableTabBarView: HKAnimatedTabBarBaseView, AnimatedTabBarItemRepresentable {
 
   var action: ((AnimatedTabBarItemRepresentable) -> ())?
 

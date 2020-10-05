@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ExapandedTabBarView: BaseView, AnimatedTabBarItemRepresentable {
+final class ExapandedTabBarView: HKAnimatedTabBarBaseView, AnimatedTabBarItemRepresentable {
 
   // MARK: - ExpandableTabBarItemRepresentable
 
