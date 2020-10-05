@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class BaseView: UIView {
+public class HKAnimatedTabBarBaseView: UIView {
 
   // MARK: Lyfecycle
 

@@ -22,7 +22,7 @@
 		0E81E3C0237E9C38006BE8FD /* TabbarSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81E3BF237E9C38006BE8FD /* TabbarSelectable.swift */; };
 		0E81E3C3237E9C8D006BE8FD /* UIWindow+SafeAreaInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81E3C2237E9C8D006BE8FD /* UIWindow+SafeAreaInset.swift */; };
 		0E81E3C7237E9D75006BE8FD /* UIView+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81E3C6237E9D75006BE8FD /* UIView+Subview.swift */; };
-		0E81E3C9237E9DAA006BE8FD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81E3C8237E9DAA006BE8FD /* BaseView.swift */; };
+		0E81E3C9237E9DAA006BE8FD /* HKAnimatedTabBarBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81E3C8237E9DAA006BE8FD /* HKAnimatedTabBarBaseView.swift */; };
 		0E81E3DE237E9EC9006BE8FD /* IconElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81E3D9237E9EC9006BE8FD /* IconElement.swift */; };
 		0E81E3DF237E9EC9006BE8FD /* IconElement.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E81E3DA237E9EC9006BE8FD /* IconElement.xcassets */; };
 		0E81E3E0237E9EC9006BE8FD /* ExapandedTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81E3DB237E9EC9006BE8FD /* ExapandedTabBarView.swift */; };
@@ -60,7 +60,7 @@
 		0E81E3BF237E9C38006BE8FD /* TabbarSelectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarSelectable.swift; sourceTree = "<group>"; };
 		0E81E3C2237E9C8D006BE8FD /* UIWindow+SafeAreaInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+SafeAreaInset.swift"; sourceTree = "<group>"; };
 		0E81E3C6237E9D75006BE8FD /* UIView+Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subview.swift"; sourceTree = "<group>"; };
-		0E81E3C8237E9DAA006BE8FD /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0E81E3C8237E9DAA006BE8FD /* HKAnimatedTabBarBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAnimatedTabBarBaseView.swift; sourceTree = "<group>"; };
 		0E81E3D9237E9EC9006BE8FD /* IconElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconElement.swift; sourceTree = "<group>"; };
 		0E81E3DA237E9EC9006BE8FD /* IconElement.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IconElement.xcassets; sourceTree = "<group>"; };
 		0E81E3DB237E9EC9006BE8FD /* ExapandedTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExapandedTabBarView.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0E81E3B0237E9B87006BE8FD /* TabBarReplaceView */,
-				0E81E3C8237E9DAA006BE8FD /* BaseView.swift */,
+				0E81E3C8237E9DAA006BE8FD /* HKAnimatedTabBarBaseView.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -359,7 +359,7 @@
 				0E81E3EB237E9F20006BE8FD /* MultiColorGradientView.swift in Sources */,
 				0E81E3BB237E9B87006BE8FD /* AnimatedTabBarItemRepresentable.swift in Sources */,
 				0E81E39D237E9AFD006BE8FD /* ViewController.swift in Sources */,
-				0E81E3C9237E9DAA006BE8FD /* BaseView.swift in Sources */,
+				0E81E3C9237E9DAA006BE8FD /* HKAnimatedTabBarBaseView.swift in Sources */,
 				0E81E3E9237E9F20006BE8FD /* ShadowingViewAction.swift in Sources */,
 				0E81E3DE237E9EC9006BE8FD /* IconElement.swift in Sources */,
 				0E81E3B8237E9B87006BE8FD /* TabBarReplaceView.swift in Sources */,

@@ -14,7 +14,7 @@ import UIKit
  - Tag: 1009
  - Version: 0.1
  */
-final public class TabBarReplaceView: BaseView {
+final public class TabBarReplaceView: HKAnimatedTabBarBaseView {
 
   private enum Defaults {
 
